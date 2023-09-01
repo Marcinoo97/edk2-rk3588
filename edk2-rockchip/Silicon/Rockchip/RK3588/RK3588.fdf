@@ -104,6 +104,7 @@ READ_LOCK_STATUS   = TRUE
   # Common components
   #
 !include Silicon/Rockchip/FvMainModules.fdf.inc
+  INF SecurityPkg/VariableAuthenticated/SecureBootConfigDxe/SecureBootConfigDxe.inf
 
   #
   # General platform manager
@@ -135,7 +136,7 @@ READ_LOCK_STATUS   = TRUE
   # RAM Disk Support
   #
   INF MdeModulePkg/Universal/Disk/RamDiskDxe/RamDiskDxe.inf
-
+  
   #
   # Custom platform components
   #
