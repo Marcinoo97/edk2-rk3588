@@ -573,10 +573,9 @@ FspiLib|Silicon/Rockchip/Library/FspiLib/FspiLib.inf
   Silicon/Rockchip/Library/DisplayLib/DwHdmiQpLib.inf
   Silicon/Rockchip/Drivers/LcdGraphicsOutputDxe/LcdGraphicsOutputDxe.inf
   
-    #
+  #
   # Secure Boot dependencies
   #
-  AuthVariableLib|SecurityPkg/Library/AuthVariableLib/AuthVariableLib.inf
   SecureBootVariableLib|SecurityPkg/Library/SecureBootVariableLib/SecureBootVariableLib.inf
   SecureBootVariableProvisionLib|SecurityPkg/Library/SecureBootVariableProvisionLib/SecureBootVariableProvisionLib.inf
   PlatformPKProtectionLib|SecurityPkg/Library/PlatformPKProtectionLibVarPolicy/PlatformPKProtectionLibVarPolicy.inf
