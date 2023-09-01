@@ -18,7 +18,6 @@ DefinitionBlock ("Dsdt.aml", "DSDT", 2, "RPIFDN", "RPI", 2)
   Scope (\_SB_)
   {
     include ("Cpu.asl")
-
     include ("Emmc.asl")
     include ("Sdhc.asl")
     // include ("Gmac.asl")
@@ -26,11 +25,9 @@ DefinitionBlock ("Dsdt.aml", "DSDT", 2, "RPIFDN", "RPI", 2)
     // include ("I2c.asl")
     include ("Uart.asl")
     // include ("Spi.asl")
-
     include ("Usb1Host.asl")
     include ("Usb3Host0.asl")
     include ("Usb3Host1.asl")
     include ("Usb3Host2.asl")
-	include ("SoftwareTpm2Device.asl")
   }
 }

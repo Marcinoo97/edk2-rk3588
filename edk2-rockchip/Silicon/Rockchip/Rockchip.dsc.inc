@@ -576,12 +576,12 @@ FspiLib|Silicon/Rockchip/Library/FspiLib/FspiLib.inf
   #
   # Secure Boot dependencies
   #
-  SecureBootVariableLib|SecurityPkg/Library/SecureBootVariableLib/SecureBootVariableLib.inf
-  SecureBootVariableProvisionLib|SecurityPkg/Library/SecureBootVariableProvisionLib/SecureBootVariableProvisionLib.inf
-  PlatformPKProtectionLib|SecurityPkg/Library/PlatformPKProtectionLibVarPolicy/PlatformPKProtectionLibVarPolicy.inf
+  SecurityPkg/Library/SecureBootVariableLib/SecureBootVariableLib.inf
+  SecurityPkg/Library/SecureBootVariableProvisionLib/SecureBootVariableProvisionLib.inf
+  SecurityPkg/Library/PlatformPKProtectionLibVarPolicy/PlatformPKProtectionLibVarPolicy.inf
 
   # re-use the UserPhysicalPresent() dummy implementation from the ovmf tree
-  PlatformSecureLib|OvmfPkg/Library/PlatformSecureLib/PlatformSecureLib.inf
+  OvmfPkg/Library/PlatformSecureLib/PlatformSecureLib.inf
 
   #
   # USB Support

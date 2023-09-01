@@ -30,6 +30,5 @@ DefinitionBlock ("Dsdt.aml", "DSDT", 2, "RPIFDN", "RPI", 2)
     include ("Usb1Host.asl")
     include ("Usb3Host0.asl")
     include ("Usb3Host2.asl")
-	include ("SoftwareTpm2Device.asl")
   }
 }
