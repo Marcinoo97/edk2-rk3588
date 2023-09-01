@@ -406,9 +406,9 @@ FspiLib|Silicon/Rockchip/Library/FspiLib/FspiLib.inf
   gEmbeddedTokenSpaceGuid.PcdMemoryTypeEfiACPIReclaimMemory|0
   gEmbeddedTokenSpaceGuid.PcdMemoryTypeEfiACPIMemoryNVS|0
   gEmbeddedTokenSpaceGuid.PcdMemoryTypeEfiReservedMemoryType|0
-  gEmbeddedTokenSpaceGuid.PcdMemoryTypeEfiRuntimeServicesData|50
-  gEmbeddedTokenSpaceGuid.PcdMemoryTypeEfiRuntimeServicesCode|20
-  gEmbeddedTokenSpaceGuid.PcdMemoryTypeEfiBootServicesCode|400
+  gEmbeddedTokenSpaceGuid.PcdMemoryTypeEfiRuntimeServicesData|350
+  gEmbeddedTokenSpaceGuid.PcdMemoryTypeEfiRuntimeServicesCode|270
+  gEmbeddedTokenSpaceGuid.PcdMemoryTypeEfiBootServicesCode|900
   gEmbeddedTokenSpaceGuid.PcdMemoryTypeEfiBootServicesData|20000
   gEmbeddedTokenSpaceGuid.PcdMemoryTypeEfiLoaderCode|20
   gEmbeddedTokenSpaceGuid.PcdMemoryTypeEfiLoaderData|0
@@ -485,6 +485,8 @@ FspiLib|Silicon/Rockchip/Library/FspiLib/FspiLib.inf
     <LibraryClasses>
       NULL|SecurityPkg/Library/DxeImageVerificationLib/DxeImageVerificationLib.inf
   }
+  SecurityPkg/VariableAuthenticated/SecureBootConfigDxe/SecureBootConfigDxe.inf
+ 
   MdeModulePkg/Universal/HiiDatabaseDxe/HiiDatabaseDxe.inf {
     <LibraryClasses>
       PcdLib|MdePkg/Library/DxePcdLib/DxePcdLib.inf
@@ -570,6 +572,16 @@ FspiLib|Silicon/Rockchip/Library/FspiLib/FspiLib.inf
   # Silicon/Rockchip/Library/DisplayLib/AnalogixDpLib.inf
   Silicon/Rockchip/Library/DisplayLib/DwHdmiQpLib.inf
   Silicon/Rockchip/Drivers/LcdGraphicsOutputDxe/LcdGraphicsOutputDxe.inf
+  
+  #
+  # Secure Boot dependencies
+  #
+  SecureBootVariableLib|SecurityPkg/Library/SecureBootVariableLib/SecureBootVariableLib.inf
+  SecureBootVariableProvisionLib|SecurityPkg/Library/SecureBootVariableProvisionLib/SecureBootVariableProvisionLib.inf
+  PlatformPKProtectionLib|SecurityPkg/Library/PlatformPKProtectionLibVarPolicy/PlatformPKProtectionLibVarPolicy.inf
+
+  # re-use the UserPhysicalPresent() dummy implementation from the ovmf tree
+  PlatformSecureLib|OvmfPkg/Library/PlatformSecureLib/PlatformSecureLib.inf
 
   #
   # USB Support
