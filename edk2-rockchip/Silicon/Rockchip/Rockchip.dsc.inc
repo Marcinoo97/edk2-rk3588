@@ -538,6 +538,11 @@ FspiLib|Silicon/Rockchip/Library/FspiLib/FspiLib.inf
   Silicon/Rockchip/Drivers/PlatformSmbiosDxe/PlatformSmbiosDxe.inf
 
   #
+  # RAM Disk Support
+  #
+  MdeModulePkg/Universal/Disk/RamDiskDxe/RamDiskDxe.inf
+  
+  #
   # I2C Bus & Devices
   #
   MdeModulePkg/Bus/I2c/I2cDxe/I2cDxe.inf

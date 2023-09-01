@@ -130,6 +130,11 @@ READ_LOCK_STATUS   = TRUE
   # GMAC Init Driver
   #
   INF Silicon/Rockchip/RK3588/Drivers/GmacPlatformDxe/GmacPlatformDxe.inf
+  
+  #
+  # RAM Disk Support
+  #
+  INF MdeModulePkg/Universal/Disk/RamDiskDxe/RamDiskDxe.inf
 
   #
   # Custom platform components
