@@ -104,7 +104,10 @@ READ_LOCK_STATUS   = TRUE
   # Common components
   #
 !include Silicon/Rockchip/FvMainModules.fdf.inc
+  INF MdeModulePkg/Universal/SecurityStubDxe/SecurityStubDxe.inf
+!include ArmPlatformPkg/SecureBootDefaultKeys.fdf.inc
   INF SecurityPkg/VariableAuthenticated/SecureBootConfigDxe/SecureBootConfigDxe.inf
+  INF SecurityPkg/VariableAuthenticated/SecureBootDefaultKeysDxe/SecureBootDefaultKeysDxe.inf
 
   #
   # General platform manager
