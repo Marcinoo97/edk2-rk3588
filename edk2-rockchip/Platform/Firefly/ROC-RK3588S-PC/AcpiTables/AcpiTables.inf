@@ -41,6 +41,8 @@
   $(RK_COMMON_ACPI_DIR)/Sata1.asl
   $(RK_COMMON_ACPI_DIR)/Sata2.asl
   $(RK_COMMON_ACPI_DIR)/Usb2Host.asl
+  $(RK_COMMON_ACPI_DIR)/SoftwareTpm2Device.asl
+  $(RK_COMMON_ACPI_DIR)/SoftwareTpm2Table.aslc
 
 [Packages]
   ArmPkg/ArmPkg.dec
