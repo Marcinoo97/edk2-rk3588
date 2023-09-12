@@ -24,6 +24,13 @@
   INF MdeModulePkg/Universal/HiiDatabaseDxe/HiiDatabaseDxe.inf
 
   #
+  # Status LED support
+  #
+!if $(RK_STATUS_LED_ENABLE) == TRUE
+  INF Silicon/Rockchip/Drivers/StatusLedDxe/StatusLedDxe.inf
+!endif
+
+  #
   # Non-volatile FVB support
   #
   # RkFvbDxe does not have a hard dependency on NorFlashDxe to provide
@@ -162,6 +169,11 @@
   INF MdeModulePkg/Universal/Disk/PartitionDxe/PartitionDxe.inf
   INF FatPkg/EnhancedFatDxe/Fat.inf
   INF MdeModulePkg/Universal/Disk/UnicodeCollation/EnglishDxe/EnglishDxe.inf
+
+  #
+  # RAM Disk Support
+  #
+  INF MdeModulePkg/Universal/Disk/RamDiskDxe/RamDiskDxe.inf
 
   #
   # UEFI Network Stack
